@@ -4,6 +4,7 @@ def do_maze():
     
     if get_entity_type() == Entities.Treasure:
         harvest()
+        break
         
     while get_entity_type() != Entities.Treasure:
         if move(directions[index]):
