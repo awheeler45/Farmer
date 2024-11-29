@@ -11,6 +11,8 @@ def do_maze():
 			if get_entity_type() == Entities.Treasure:
 				harvest()
 				break
+			elif get_entity_type() == Entities.Grass:
+				break
 			index = (index - 1) % 4
 		else:
 			index = (index + 1) % 4
