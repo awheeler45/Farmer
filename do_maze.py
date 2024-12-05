@@ -16,3 +16,5 @@ def do_maze():
 			index = (index - 1) % 4
 		else:
 			index = (index + 1) % 4
+			
+		

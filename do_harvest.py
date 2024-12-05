@@ -12,8 +12,9 @@ def do_harvest():
 		else:
 			harvest()
 			
-	elif current_entity == Entities.Sunflower:
+	elif current_entity == Entities.Sunflower and not sunflower_tracking["sunflower_called"]:
 		sunflower()
+		sunflower_tracking["sunflower_called"] = True
 
 	elif current_entity in [Entities.Hedge, Entities.Treasure]:
 		do_maze()
